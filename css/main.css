@@ -178,7 +178,7 @@ html{
 .about-section{
 	background-color: var(--dark);
 }
-.salon-hours-section{
+.salon-hours-section,.contact-section{
 	background-color: var(--second);
 }
 .the-team-section{
@@ -188,14 +188,42 @@ html{
 /* our services section */
 .our-services-section{
 	flex-direction: column;
+	height: 80vh;
+
 }
 .services-articles{
-	border: 1px solid red;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/* width: 80%; */
+}
+.services-articles article{
+	
+	display: flex;
+	gap: .5rem;
+	padding: .5rem;
+	font-size: 1rem;
+}
+.services-articles article div+div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.services-articles h3{
+	font-size: 1rem;
+	padding-bottom: .25rem;
+}
+.services-articles p{
+	font-size: .8rem;
 }
 .article-image-container{
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	border-radius: .25rem;
+	flex-shrink: 0;
 }
 
 /******************************************
