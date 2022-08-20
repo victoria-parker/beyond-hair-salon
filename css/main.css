@@ -116,7 +116,16 @@ html{
 	gap: 1rem;
 }
 .text-container{
-	width: 50%;
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.text-container h2{
+	font-size: 1.5rem;
+	padding-bottom: .25rem;
+	border-bottom: 1px solid var(--light) ;
+	margin-bottom: .5rem;
 }
 /******************************************
 /* LAYOUT
@@ -139,7 +148,7 @@ html{
 .hero-section{
 
 	height: 100vh;
-	background: rgba(0,0,0,0.3) url('../img/pexels-pixabay-458530.jpg');
+	background: rgba(0,0,0,0.3) url('../img/pexels-cottonbro-3992875.jpg');
 	background-blend-mode: multiply;
 	background-repeat: no-repeat;
 	background-size: cover;
