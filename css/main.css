@@ -72,14 +72,53 @@ input, select, textarea {
 /******************************************
 /* BASE STYLES
 /*******************************************/
-body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+:root{
+	--first:#A4133C;
+	--second:#FF4D6D;
+	--light:#FFF;
+	--dark:#590D22;
 }
 
+body{
+	background: var(--dark);
+	color: var(--light);
+	font-family: 'Open Sans', sans-serif;
+}
+html{
+	font-size: 18px;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+/* Header and Menu */
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.menu{
+	display: none;
+}
+
+
+/* Hero Section */
+.hero-section{
+
+	height: 100vh;
+	background: var(--dark) url('../img/pexels-pixabay-458530.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-flow: column nowrap;
+}
 
 
 /******************************************
