@@ -72,15 +72,18 @@ input, select, textarea {
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+/* Base colors */
 :root{
 	--first:#A4133C;
 	--second:#FF4D6D;
 	--light:#FFF;
 	--dark:#590D22;
 }
-
+/* base body and font-size */
 body{
 	background: var(--dark);
 	color: var(--light);
@@ -88,6 +91,32 @@ body{
 }
 html{
 	font-size: 18px;
+}
+
+/*general image display */
+.image-container{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.image-container img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+/* general sections display */
+.section-box{
+	padding: 2rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	gap: 1rem;
+}
+.text-container{
+	width: 50%;
 }
 /******************************************
 /* LAYOUT
@@ -110,7 +139,8 @@ html{
 .hero-section{
 
 	height: 100vh;
-	background: var(--dark) url('../img/pexels-pixabay-458530.jpg');
+	background: rgba(0,0,0,0.3) url('../img/pexels-pixabay-458530.jpg');
+	background-blend-mode: multiply;
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -118,7 +148,19 @@ html{
 	align-items: flex-start;
 	justify-content: center;
 	flex-flow: column nowrap;
+
+	padding-left: 2rem;
 }
+.hero-section h1{
+	font-size: 3rem;
+	padding-bottom: .5rem;
+	border-bottom: 2px solid var(--light) ;
+	margin-bottom: 1rem;
+
+}
+
+/* About section */
+
 
 
 /******************************************
