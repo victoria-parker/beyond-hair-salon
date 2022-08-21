@@ -72,7 +72,9 @@ input, select, textarea {
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+*{
+	box-sizing: border-box;
+}
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
@@ -92,7 +94,12 @@ body{
 html{
 	font-size: 18px;
 }
-
+h2{
+	font-size: 1.5rem;
+	padding-bottom: .25rem;
+	border-bottom: 1px solid var(--light) ;
+	margin-bottom: .5rem;
+}
 /*general image display */
 .image-container{
 	width: 200px;
@@ -169,12 +176,6 @@ html{
 	justify-content: center;
 	gap: 1rem;
 }
-.text-container h2{
-	font-size: 1.5rem;
-	padding-bottom: .25rem;
-	border-bottom: 1px solid var(--light) ;
-	margin-bottom: .5rem;
-}
 .about-section{
 	background-color: var(--dark);
 }
@@ -226,6 +227,37 @@ html{
 	flex-shrink: 0;
 }
 
+/* contact-section */
+.contact-section{
+	flex-direction: column;
+}
+form{
+
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+	width: 50%;
+	
+}
+form input, textarea{
+	border: 1px solid var(--light);
+	border-radius: .15rem;
+	height: 1.5rem;
+	width: 100%;
+}
+form textarea{
+	height: 5rem;
+}
+form label, form button{
+	font-weight: 300;
+	font-size: .8rem;
+	font-variant: small-caps;
+}
+form button{
+	padding: .5rem 2rem;
+	align-self: center;
+	font-family: 'Open Sans', sans-serif;	
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
