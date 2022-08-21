@@ -231,14 +231,36 @@ h2{
 .contact-section{
 	flex-direction: column;
 }
+.contact-section div{
+	width: 50%;
+}
 form{
-
 	display: flex;
 	flex-direction: column;
 	gap: .5rem;
 	width: 50%;
-	
 }
+
+
+/* footer */
+footer{
+	font-size: .8rem;
+	font-variant: small-caps;
+}
+footer a{
+	text-decoration: none;
+	color: var(--light);
+}
+footer ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* Contact Form */
 form input, textarea{
 	border: 1px solid var(--light);
 	border-radius: .15rem;
@@ -247,6 +269,7 @@ form input, textarea{
 }
 form textarea{
 	height: 5rem;
+	resize: none;
 }
 form label, form button{
 	font-weight: 300;
@@ -258,6 +281,3 @@ form button{
 	align-self: center;
 	font-family: 'Open Sans', sans-serif;	
 }
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
