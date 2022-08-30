@@ -126,6 +126,12 @@ h2{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	padding: 1.5rem;
+}
+.header-scrolled{
+	background-color: var(--dark);
+	opacity: 0.8;
+
 }
 .menu{
 	display: none;
