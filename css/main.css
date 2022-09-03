@@ -136,7 +136,10 @@ h2{
 .menu{
 	display: none;
 }
-
+.logo{
+	text-decoration: none;
+	color: #FFF;
+}
 
 /* Hero Section */
 .hero-section{
