@@ -131,8 +131,7 @@ h2{
 	padding:0 1.5rem;
 }
 .header-scrolled{
-	/* background-color: var(--dark); */
-	background-color: red;
+	background-color: var(--dark);
 	opacity: 0.5;
 
 }
