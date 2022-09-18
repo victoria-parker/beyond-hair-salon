@@ -3,7 +3,7 @@ This is a website I built inspired for a hair salon. It is a one page website, f
 
 **Link to project:** https://victoria-parker.github.io/beyond-hair-salon/
 
-![alt tag](http://placecorgi.com/1200/650)
+![website hero section](beyond-hair-website.png)
 
 ## How It's Made:
 
