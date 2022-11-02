@@ -11,5 +11,3 @@ This is a website I built inspired for a hair salon. It is a one page website, f
 
 I built this project with the objective of building a simple website for a small client with the idea of keeping the code as clean as possible.
 
-## Optimizations
-Need to work on the menu as I didn't have the chance yet.
